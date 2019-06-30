@@ -2,7 +2,15 @@
 Facial emotion classifier with your web camera and `MAX-Facial-Emotion-Classifier`. 
 
 ## Prerequisite
-Prepare docker container of `MAX-Facial-Emotion-Classifier`. See `README` of [MAX-Facial-Emotion-Classifier](https://github.com/IBM/MAX-Facial-Emotion-Classifier). 
+1. Prepare docker container of `MAX-Facial-Emotion-Classifier`. See `README` of [MAX-Facial-Emotion-Classifier](https://github.com/IBM/MAX-Facial-Emotion-Classifier). 
+
+1. Change the URL of `MAX-Facial-Emotion-Classifier` in the script. 
+
+    ```python
+    # server url
+    -SERVER_URL = 'http://localhost:5000/model/predict'
+    +SERVER_URL = 'http://XX.XX.XX.XX:5000/model/predict'
+    ```
 
 ---
 
